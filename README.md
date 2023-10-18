@@ -23,9 +23,33 @@ No notebook data-visualization.ipynb, é realizada a visualização dos dados, e
 O notebook model-training.ipynb apresenta, em seu início, o tratamento dos dados, além da divisão do dataset entre parte de treinamento e parte de testes. Logo depois, é feito o treinamento dos modelos com os algoritmos LightGBM, XGBoost, Decision Tree e K-Nearest Neighbors (kNN). Por fim, tais modelos são exportados, possibilitando seu compartilhamento e uso em outros locais.
 
 ## Resultados
-Os modelos produzidos com os algoritmos LightGBM, XGBoost e Decision Tree obtiveram acurácia de **100%**.
+Os modelos produzidos com os algoritmos LightGBM, XGBoost e Decision Tree obtiveram acurácia de **100%**. Esse dado, a matriz de confusão e o classification report estão expostos logo abaixo:
 
-Com o algoritmo K-Nearest Neighbors, por sua vez, alcançou-se uma acurácia de **96,66%**.
+![](https://github.com/Lucasbnas435/ML-Iris-Species/blob/master/src/docs/three-models-results.png?raw=true)
+
+Com o algoritmo K-Nearest Neighbors, por sua vez, alcançou-se uma acurácia de **96,66%**. Esse dado, a matriz de confusão e o classification report são exibidos nesta imagem:
+
+![](https://github.com/Lucasbnas435/ML-Iris-Species/blob/master/src/docs/kNN-results.png?raw=true)
+
+## Estrutura de Pastas
+```
+.
+├── README.md
+└── src
+    ├── dataset
+    │   └── Iris.csv
+    ├── docs
+    │   ├── kNN-results.png
+    │   └── three-models-results.png
+    ├── models
+    │   ├── DecisionTreeModel.joblib
+    │   ├── kNNModel.pkl
+    │   ├── LightGBMModel.pkl
+    │   └── XGBoostModel.json
+    └── notebooks
+        ├── data-visualization.ipynb
+        └── model-training.ipynb
+```
 
 ## Fonte dos Dados
 https://www.kaggle.com/datasets/uciml/iris/data
