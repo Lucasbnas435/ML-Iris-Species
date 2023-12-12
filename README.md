@@ -20,14 +20,14 @@ A aplicação foi desenvolvida em Python 3.10, utilizando [Jupyter Notebooks](ht
 
 No notebook data-visualization.ipynb, é realizada a visualização dos dados, expondo gráficos e informações que orientam o processo de Análise Exploratória inicial.
 
-O notebook model-training.ipynb apresenta, em seu início, o tratamento dos dados, além da divisão do dataset entre parte de treinamento e parte de testes. Logo depois, é feito o treinamento dos modelos com os algoritmos LightGBM, XGBoost, Decision Tree e K-Nearest Neighbors (kNN). Por fim, tais modelos são exportados, possibilitando seu compartilhamento e uso em outros locais.
+O notebook model-training.ipynb apresenta, em seu início, o tratamento dos dados, além da divisão do dataset entre parte de treinamento e parte de testes. Logo depois, é feito o treinamento dos modelos com os algoritmos LightGBM, XGBoost e Decision Tree, sendo criada uma instância K-Nearest Neighbors (kNN) também. Por fim, tais modelos são exportados, possibilitando seu compartilhamento e uso em outros locais.
 
 ## Resultados
 Os modelos produzidos com os algoritmos LightGBM, XGBoost e Decision Tree obtiveram acurácia de **100%**. Esse dado, a matriz de confusão e o classification report estão expostos logo abaixo:
 
 ![](https://github.com/Lucasbnas435/ML-Iris-Species/blob/master/src/docs/three-models-results.png?raw=true)
 
-Com o algoritmo K-Nearest Neighbors, por sua vez, alcançou-se uma acurácia de **96,66%**. Esse dado, a matriz de confusão e o classification report são exibidos nesta imagem:
+Com a instância baseada no algoritmo K-Nearest Neighbors, por sua vez, alcançou-se uma acurácia de **96,66%**. Esse dado, a matriz de confusão e o classification report são exibidos nesta imagem:
 
 ![](https://github.com/Lucasbnas435/ML-Iris-Species/blob/master/src/docs/kNN-results.png?raw=true)
 
@@ -43,7 +43,7 @@ Com o algoritmo K-Nearest Neighbors, por sua vez, alcançou-se uma acurácia de 
     │   └── three-models-results.png
     ├── models
     │   ├── DecisionTreeModel.joblib
-    │   ├── kNNModel.pkl
+    │   ├── kNNInstance.pkl
     │   ├── LightGBMModel.pkl
     │   └── XGBoostModel.json
     └── notebooks
